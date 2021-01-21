@@ -13,7 +13,8 @@
 
 .herotext {
   font-family: 'Roboto', sans-serif;
-  font-size: 105px;
+  font-size: 95px;
+  margin: auto;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Roboto:wght@400;500&display=swap');

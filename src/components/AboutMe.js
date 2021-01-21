@@ -7,11 +7,11 @@ constructor(props) {
 
 render(){
     return(
-        <div>
-            <button>More About Me</button>
-            <p>words words words</p>
-            <button>Less About Me</button>
-            <p>words words words</p>
+        <div id="aboutme-section" className="d-flex flex-column justify-content-center align-items-center">
+            <div id="slider-container" className="d-flex flex-row justify-content-center align-items-start">
+                <div id="left-box" className="d-flex text-white"></div>
+                <div id="right-box" className="d-flex text-white"></div>
+            </div>
         </div>
     )
 }
