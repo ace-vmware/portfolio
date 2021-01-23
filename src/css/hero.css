@@ -1,42 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Roboto:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cutive+Mono&family=Inconsolata&family=VT323&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chicle&display=swap');
+
+
 #hero {
-  height: 450px;
+  height: 815px;
   background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
   overflow: hidden;
 }
 
 .hero {
-  height: 450px;
+  height: 815px;
 }
-
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
 
 
 .herotext {
   font-family: 'Roboto', sans-serif;
   font-size: 95px;
-  margin: auto;
+  color: white;
 }
-
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Roboto:wght@400;500&display=swap');
 
 .herotext2 {
   font-family: 'Roboto Condensed', sans-serif;
   font-size: 25px;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Cutive+Mono&family=Inconsolata&family=VT323&display=swap');
-
 .herotext3 {
   font-family: 'Inconsolata', monospace;
   font-size: 30px;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Chicle&display=swap');
 
 .herotext4 {
   font-family: 'Chicle', cursive;
   font-size: 50px;
 }
+
+@media (max-width: 480px) {
+  .herotext {
+    font-size: 40px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .herotext2 {
+    font-size: 18.5px;
+  }
+}
+@media (max-width: 480px) {
+  .herotext3 {
+    font-size: 23px;
+  }
+}
+@media (max-width: 480px) {
+  .herotext4 {
+    font-size: 35px;
+  }
+}
+
 
 #stars {
   width: 1px;

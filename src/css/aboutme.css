@@ -1,21 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Italianno&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Roboto:wght@400;500&display=swap');
+
+
 #aboutme-section {
     background-color: #131724;
     height: 450px;
 }
 
 #slider-container {
-    width: 90%;
+    width: 95%;
     height: 80%;
 }
 
 #left-box {
     height: 100%;
-    width: 50%;
+    cursor: pointer;
+}
+
+#middle-box {
+    height: 100%;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 25px;
 }
 
 #right-box {
     height: 100%;
-    width: 50%;
+
 }
 
+@media (max-width: 480px) {
+    #middle-box {
+        display: none;
+    }
+    #right-box {
+        margin-left: 5px;
+    }
+}
+
+.open-sign {
+    font-family: 'Italianno', cursive;
+    font-weight: 600;
+    border: 2px solid #F8649F;
+    border-radius: 10px;
+    color: #2DDDFD;
+    text-shadow: 0 0 10px #2DDDFD;
+    text-align: center;
+    box-shadow: 1px 0px 20px 1px #861674;
+}
+
+.closed-sign {
+    font-family: 'Italianno', cursive;
+    font-weight: 600;
+    border: 2px solid #F7F235;
+    border-radius: 10px;
+    color: #fa4b4b;
+    text-shadow: 0 0 20px #f53a49;
+    text-align: center;
+    box-shadow: 1px 0px 20px 1px #ac6a07;
+    padding: 5px;
+}
+
+.off-sign {
+    font-family: 'Italianno', cursive;
+    font-weight: 600;
+    border: 2px solid #4e4e4e;
+    border-radius: 10px;
+    color: #4e4e4e;
+    text-align: center;
+    padding: 5px;
+}
+
+#aboutme-txt2 {
+    display: block;
+}
 

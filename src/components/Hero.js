@@ -10,7 +10,7 @@ class Hero extends Component {
     return (
       <div id="hero">
           <div className="d-flex justify-content-center align-items-center flex-column hero">
-                <h1 className="herotext text-white mx-5">Adam Evancho</h1>
+                <h1 className="herotext mx-5">Adam Evancho</h1>
                 <br></br>
                 <div className="d-inline-flex align-items-baseline">
                   <h2 className="text-warning herotext3">{"{ "}</h2>
