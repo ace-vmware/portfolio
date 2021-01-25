@@ -1,29 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Italianno&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Roboto:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap');
 
 
 #aboutme-section {
-    background-color: #131724;
-    height: 450px;
+    background-color: #131631;
+    height: 400px;
 }
 
 #slider-container {
     width: 95%;
-    height: 80%;
+    height: 90%;
 }
 
-#left-box {
-    height: 100%;
+#top-box {
+    height: 50px;
     cursor: pointer;
+    width: 100%;
 }
 
-#middle-box {
-    height: 100%;
-    font-family: 'Roboto Condensed', sans-serif;
-    font-size: 25px;
-}
-
-#right-box {
+#bottom-box {
     height: 100%;
 
 }
@@ -46,6 +41,9 @@
     text-shadow: 0 0 10px #2DDDFD;
     text-align: center;
     box-shadow: 1px 0px 20px 1px #861674;
+    padding: 5px;
+    width: 90px;
+    height: 45px;
 }
 
 .closed-sign {
@@ -58,6 +56,8 @@
     text-align: center;
     box-shadow: 1px 0px 20px 1px #ac6a07;
     padding: 5px;
+    width: 90px;
+    height: 45px;
 }
 
 .off-sign {
@@ -68,9 +68,18 @@
     color: #4e4e4e;
     text-align: center;
     padding: 5px;
+    width: 90px;
+    height: 45px;
+
 }
 
-#aboutme-txt2 {
-    display: block;
+#aboutme-txt1 {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 700;
+}
+
+#about-me-content {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 400;
 }
 

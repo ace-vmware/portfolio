@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Roboto:wght@400;500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cutive+Mono&family=Inconsolata&family=VT323&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Chicle&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap');
 
 #hero {
   height: 815px;
@@ -16,14 +16,15 @@
 
 
 .herotext {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Ubuntu', sans-serif;
   font-size: 95px;
+  font-weight: 400;
   color: white;
 }
 
 .herotext2 {
-  font-family: 'Roboto Condensed', sans-serif;
-  font-size: 25px;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 20px;
 }
 
 .herotext3 {
@@ -46,7 +47,7 @@
 
 @media (max-width: 480px) {
   .herotext2 {
-    font-size: 18.5px;
+    font-size: 16.5px;
   }
 }
 @media (max-width: 480px) {
