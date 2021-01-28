@@ -14,12 +14,12 @@ class Hero extends Component {
                 <br></br>
                 <div className="d-inline-flex align-items-baseline">
                   <h2 className="text-warning herotext3">{"{ "}</h2>
-                  <h2 className="text-primary d-flex herotext3">web developer</h2>
+                  <h2 className=" d-flex herotext3 text-primary">web developer</h2>
                   <h2 className="text-warning herotext3">{" }"}</h2>
-                  <h2 className="indigo200 herotext2">&nbsp;extraordinaire</h2>
+                  <h2 className="text-white herotext2">&nbsp;extraordinaire</h2>
                 </div>
                 <div className="d-inline-flex align-items-baseline mt-n3">
-                  <h2 className="d-flex indigo200 herotext2">problem-solver&nbsp;</h2>
+                  <h2 className="d-flex text-white herotext2">problem-solver&nbsp;</h2>
                   <h2><i className="text-danger herotext4">supreme</i></h2>
                 </div>
           </div>

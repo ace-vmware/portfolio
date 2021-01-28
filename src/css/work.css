@@ -1,0 +1,18 @@
+#work-section {
+    background-color: #ffffff;
+    opacity: 1;
+    background-image:  radial-gradient(#19212D 1px, transparent 1px), radial-gradient(#19212D 1px, #ffffff 1px);
+    background-size: 40px 40px;
+    background-position: 0 0,20px 20px;
+    height: 600px;
+    
+}
+
+.work-section-header {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+}
+
+
+

@@ -10,10 +10,12 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 // Sass Imports
 import "../src/scss/hero.scss";
 import "../src/scss/aboutme.scss";
+import "../src/scss/carousel.scss";
 
 // CSS Imports
 import "../src/css/hero.css"
 import "../src/css/aboutme.css"
+import "../src/css/work.css"
 
 ReactDOM.render(
 <App />, 
