@@ -2,6 +2,13 @@ import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import ReactCSSTransitionGroup from 'react-transition-group/esm/TransitionGroup';
 
+// Media
+import dashboard from "../media/dashboard.png"
+import browser from "../media/browser.png"
+import capitol from "../media/capitol.png"
+import swap from "../media/swap.png"
+import webdesign from "../media/webdesign.png"
+
 class Slider extends Component {
   constructor(props){
     super(props);
@@ -14,45 +21,43 @@ class Slider extends Component {
     this.leftClick = this.moveLeft.bind(this)
   }
 
-  staticList = ["static1", "static2", "static3", "static4", "static5", "static6"]
-
   itemContent = [
   {
-  name: "GSL",
+  name: "Salesforce Dashboard Clone",
   github: "https://github.com/ace-vmware/GSL",
-  icon: "//s3.amazonaws.com/pix.iemoji.com/images/emoji/apple/ios-12/256/red-apple.png",
-  description: "This is a sample description."
+  icon: dashboard,
+  tags: ["Node.js", "Express.js"]
 },
   {
-  name: "GSL",
-  github: "https://github.com/ace-vmware/GSL",
-  icon: "//s3.amazonaws.com/pix.iemoji.com/images/emoji/apple/ios-12/256/red-apple.png",
-  description: "This is a sample description."
+  name: "Fedbot",
+  github: "https://github.com/ace-vmware/Fedbot",
+  icon: capitol,
+  tags: ["Python", "PostgreSQL"]
 },    {
-  name: "GSL",
-  github: "https://github.com/ace-vmware/GSL",
-  icon: "//s3.amazonaws.com/pix.iemoji.com/images/emoji/apple/ios-12/256/red-apple.png",
-  description: "This is a sample description."
+  name: "Squad Reassignment Tool",
+  github: "https://github.com/ace-vmware/AutoSquadReassignment",
+  icon: swap,
+  tags: ["Python", "Flask"]
 },    {
-  name: "GSL",
-  github: "https://github.com/ace-vmware/GSL",
-  icon: "//s3.amazonaws.com/pix.iemoji.com/images/emoji/apple/ios-12/256/red-apple.png",
-  description: "This is a sample description. This is a sample description. This is a sample description. This is a sample description. This is a sample description. This is a sample description. This is a sample description. This is a sample description. This is a sample description. This is a sample description. This is a sample description. This is a sample description. This is a sample description. This is a sample description. This is a sample description. This is a sample description. This is a sample description. This is a sample description. "
+  name: "Portfolio",
+  github: "https://github.com/ace-vmware/portfolio",
+  icon: webdesign,
+  tags: ["React.js", "SaaS"]
 },    {
-  name: "GSL",
-  github: "https://github.com/ace-vmware/GSL",
-  icon: "//s3.amazonaws.com/pix.iemoji.com/images/emoji/apple/ios-12/256/red-apple.png",
-  description: "This is a sample description."
+  name: "Portfolio (old)",
+  github: "https://github.com/ace-vmware/adamevancho-website",
+  icon: webdesign,
+  tags: ["Python", "Django", "Bootstrap"]
 },    {
-  name: "GSL",
-  github: "https://github.com/ace-vmware/GSL",
-  icon: "//s3.amazonaws.com/pix.iemoji.com/images/emoji/apple/ios-12/256/red-apple.png",
-  description: "This is a sample description."
+  name: "Responsive Page",
+  github: "https://github.com/ace-vmware/Responsive-Pages",
+  icon: browser,
+  tags: ["HTML5", "CSS3"]
 },    {
-  name: "GSL",
-  github: "https://github.com/ace-vmware/GSL",
-  icon: "//s3.amazonaws.com/pix.iemoji.com/images/emoji/apple/ios-12/256/red-apple.png",
-  description: "This is a sample description."
+  name: "Salesforce Ticket Content Downloader",
+  github: "https://github.com/ace-vmware/SFDC-Content-Downloader",
+  icon: browser,
+  tags: ["Python"]
 }
   ]
 
@@ -75,7 +80,7 @@ class Slider extends Component {
         name={this.itemContent[index].name}
         github={this.itemContent[index].github}
         icon={this.itemContent[index].icon}
-        description={this.itemContent[index].description} 
+        tags={this.itemContent[index].tags} 
         />)
     }
     return items
@@ -107,11 +112,6 @@ class Slider extends Component {
             <ReactCSSTransitionGroup
             transitionName={this.state.direction}>
               {this.generateItems()}
-              {/* <Item className="item overflow-auto level-2"/>
-              <Item className="item overflow-auto level-1"/>
-              <Item className="item overflow-auto level0"/>
-              <Item className="item overflow-auto level1"/>
-              <Item className="item overflow-auto level2"/> */}
             </ReactCSSTransitionGroup>
            <div className="arrow arrow-right" onClick={this.rightClick}><i className="fas fa-arrow-right"></i></div>
           </div>
@@ -132,7 +132,13 @@ class Item extends React.Component {
   render() {
       // const className = 'item overflow-auto level' + this.props.level
       const showScroll = this.props.level !== 0 ? "overflow-hidden" : "overflow-auto"
-      const className = 'level' + this.props.level + " item " + showScroll
+      const className = 'd-flex flex-column justify-content-evenly text-center ' + 'level' + this.props.level + " item " + showScroll
+      
+      const tags = []
+      for (var tag of this.props.tags) {
+        tags.push(<div>{tag}</div>)
+      }
+      
       return(
           <div className={className}
               style={{
@@ -143,9 +149,12 @@ class Item extends React.Component {
               }}
               >
               {/* <img src={this.props.icon}></img> */}
-              <h1>{this.props.name}</h1>
-              <p>{this.props.description}</p>
-              <p>{this.props.github}</p>
+              <h3>{this.props.name}</h3>
+              <img src={this.props.icon} alt="salesforce clone"></img>
+              <div className="d-flex">
+                {tags}
+              </div>
+              <a href={this.props.github}><i class="fab fa-github"></i></a>
           </div>
       )
   }

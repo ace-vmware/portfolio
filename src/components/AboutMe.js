@@ -46,7 +46,7 @@ render(){
             id="aboutme-section" 
             className="d-flex flex-column justify-content-center align-items-center" 
             onClick={this.handleClick}>
-            <div id="slider-container" className="d-flex flex-column justify-content-start">
+            <div id="slider-container" className="d-flex flex-column">
                 <div id="top-box" className="d-flex flex-column justify-content-center my-5">
                     <div className="d-flex justify-content-center align-items-baseline">
                         <h3 id="less-btn" className="closed-sign text-center" signState={this.state.off}>LESS</h3>

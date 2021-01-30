@@ -1,4 +1,3 @@
-import { Carousel } from 'bootstrap';
 import React, { Component } from 'react';
 import Slider from "./Slider"
 
