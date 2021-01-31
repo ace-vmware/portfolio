@@ -52,10 +52,10 @@ render(){
                         <h3 id="less-btn" className="closed-sign text-center" signState={this.state.off}>LESS</h3>
                         <h3 id="more-btn" className="off-sign text-center mx-3 pr-2">MORE</h3>
                     </div>
-                    <h3 id="aboutme-txt1" className="text-center m-3 text-white">About&nbsp;Me</h3>
+                    <h3 id="aboutme-txt1" className="text-center m-3">About&nbsp;Me</h3>
 
                 </div>
-                <div id="bottom-box" className="text-white text-center overflow-auto">
+                <div id="bottom-box" className="text-center overflow-auto">
                     <div>
                         <p id='about-me-content'>Hi. I'm Adam: a creative, problem-solver, and technologist. I'm a self-taught software engineer currently working at VMware as a SaaS Support Engineer. I enjoy bulding websites, automating tasks with scripts, and learning about computer science. Some technologies I enjoy are Javascript, React.js, Node.js, MsSQL, Python, and Django. I like computers and people, and I'm passionate about making sure each other understands each other. Let's work together.</p>
                     </div>

@@ -1,17 +1,31 @@
 #work-section {
-    background-color: #ffffff;
+    /* background-color: #784648; */
+    /* opacity: 1; */
+    /* background-image:  radial-gradient(#E9E59E 1px, transparent 1px), radial-gradient(#E9E59E 1px, #784648 1px); */
+    background-color: #784648;
     opacity: 1;
-    background-image:  radial-gradient(#19212D 1px, transparent 1px), radial-gradient(#19212D 1px, #ffffff 1px);
     background-size: 40px 40px;
-    background-position: 0 0,20px 20px;
+    background-image:  repeating-linear-gradient(0deg, #293137, #293137 2px, #784648 2px, #784648);
+    
+    /* background-size: 40px 40px; */
+    /* background-position: 0 0,20px 20px; */
     height: 812px;
     
 }
 
+
+
 .work-section-header {
     font-family: 'Ubuntu', sans-serif;
+    display: inline-block;
     font-weight: 700;
     font-size: 40px;
+    color: #E9E59E;
+    background: #293137;
+    border: 2px solid #293137;
+    border-radius: 5px;
+    padding: 5px;
+    text-align: center; 
 }
 
 

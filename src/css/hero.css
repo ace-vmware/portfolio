@@ -3,11 +3,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Cutive+Mono&family=Inconsolata&family=VT323&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Chicle&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Nunito|Quicksand');
+
 
 #hero {
   height: 812px;
-  background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
-  /* background: radial-gradient(ellipse at bottom, #33244b 0%, #0f090c 100%); */
+  /* background: radial-gradient(ellipse at bottom, #232C3F 0%, #090a0f 100%); */
+  background: #858E61;
 
   overflow: hidden;
 }
@@ -17,26 +19,34 @@
 }
 
 .herotext {
-  font-family: 'Ubuntu', sans-serif;
+  /* font-family: 'Ubuntu', sans-serif; */
+  font-family: 'Quicksand', sans-serif;
   font-size: 95px;
   font-weight: 400;
-  color: white;
+  color: #293137;
+  z-index: 2;
 }
 
 .herotext2 {
-  font-family: 'Ubuntu', sans-serif;
-  font-size: 20px;
+  /* font-family: 'Ubuntu', sans-serif; */
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  color: #293137;
 }
 
 .herotext3 {
   font-family: 'Inconsolata', monospace;
   font-size: 30px;
+  color: #784648;
 }
 
 
 .herotext4 {
   font-family: 'Chicle', cursive;
   font-size: 50px;
+  color: #784648;
+
 }
 
 @media (max-width: 480px) {
@@ -113,26 +123,6 @@
   box-shadow: 414px 173px #FFF , 1374px 1250px #FFF , 519px 1606px #FFF , 1650px 50px #FFF , 1828px 1466px #FFF , 1159px 1150px #FFF , 1955px 734px #FFF , 1854px 751px #FFF , 515px 524px #FFF , 968px 1442px #FFF , 1670px 579px #FFF , 811px 1814px #FFF , 695px 765px #FFF , 290px 455px #FFF , 410px 1781px #FFF , 559px 1749px #FFF , 213px 398px #FFF , 316px 1177px #FFF , 33px 442px #FFF , 747px 1778px #FFF , 1757px 196px #FFF , 1652px 1087px #FFF , 89px 500px #FFF , 289px 468px #FFF , 1786px 388px #FFF , 1566px 1970px #FFF , 1327px 1522px #FFF , 828px 238px #FFF , 922px 425px #FFF , 579px 1712px #FFF , 1675px 1519px #FFF , 1208px 1025px #FFF , 1023px 1867px #FFF , 1282px 1267px #FFF , 1115px 630px #FFF , 1473px 1421px #FFF , 1162px 488px #FFF , 1955px 1360px #FFF , 1701px 1618px #FFF , 1381px 1459px #FFF , 1524px 1434px #FFF , 1651px 355px #FFF , 184px 1269px #FFF , 214px 1109px #FFF , 1223px 104px #FFF , 1957px 277px #FFF , 1217px 1031px #FFF , 1802px 1536px #FFF , 638px 1959px #FFF , 851px 137px #FFF , 7px 1095px #FFF , 912px 147px #FFF , 89px 1383px #FFF , 1721px 943px #FFF , 283px 1908px #FFF , 1186px 1831px #FFF , 147px 1800px #FFF , 498px 698px #FFF , 1399px 1792px #FFF , 912px 693px #FFF , 1453px 998px #FFF , 132px 1350px #FFF , 594px 1778px #FFF , 1965px 1864px #FFF , 768px 1912px #FFF , 839px 1902px #FFF , 309px 410px #FFF , 368px 1132px #FFF , 174px 1942px #FFF , 1364px 1066px #FFF , 244px 764px #FFF , 358px 1577px #FFF , 842px 717px #FFF , 1517px 1017px #FFF , 881px 1711px #FFF , 875px 167px #FFF , 580px 477px #FFF , 494px 1570px #FFF , 338px 1702px #FFF , 484px 1127px #FFF , 1949px 971px #FFF , 302px 674px #FFF , 1287px 789px #FFF , 532px 1683px #FFF , 1131px 1975px #FFF , 185px 1289px #FFF , 1046px 1201px #FFF , 1184px 853px #FFF , 1223px 1715px #FFF , 1520px 438px #FFF , 442px 699px #FFF , 1342px 267px #FFF , 865px 1660px #FFF , 142px 1303px #FFF , 1557px 349px #FFF , 1806px 1180px #FFF , 1136px 1456px #FFF , 782px 1754px #FFF , 4px 468px #FFF , 77px 251px #FFF;
 }
 
-#title {
-  position: absolute;
-  top: 50%;
-  left: 0;
-  right: 0;
-  color: #FFF;
-  text-align: center;
-  font-family: "lato", sans-serif;
-  font-weight: 300;
-  font-size: 50px;
-  letter-spacing: 10px;
-  margin-top: -60px;
-  padding-left: 10px;
-}
-#title span {
-  background: -webkit-linear-gradient(white, #38495a);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
 @keyframes animStar {
   from {
     transform: translateY(0px);
@@ -141,3 +131,162 @@
     transform: translateY(-2000px);
   }
 }
+
+/*MENU CSS*/ 
+/*
+ * Made by Erik Terwan
+ * 24th of November 2015
+ * MIT License
+ *
+ *
+ * If you are thinking of using this in
+ * production code, beware of the browser
+ * prefixes.
+ */
+ 
+ #menuToggle
+ {
+   display: block;
+   position: relative;
+   top: 40px;
+   left: 40px;
+   
+   z-index: 1;
+   
+   -webkit-user-select: none;
+   user-select: none;
+ }
+ 
+ #menuToggle a
+ {
+   text-decoration: none;
+   color: #293137;
+   
+   transition: color 0.3s ease;
+ }
+ 
+ #menuToggle a:hover
+ {
+   color: #E9E59E;
+ }
+ 
+ 
+ #menuToggle input
+ {
+   display: block;
+   width: 40px;
+   height: 32px;
+   position: absolute;
+   top: -7px;
+   left: -5px;
+   
+   cursor: pointer;
+   
+   opacity: 0; /* hide this */
+   z-index: 2; /* and place it over the hamburger */
+   
+   -webkit-touch-callout: none;
+ }
+
+ #menuToggle input:hover {
+   background: #E9E59E;
+ }
+ 
+ /*
+  * Just a quick hamburger
+  */
+ #menuToggle span
+ {
+   display: block;
+   width: 33px;
+   height: 4px;
+   margin-bottom: 5px;
+   position: relative;
+   
+   background: #293137;
+   border-radius: 3px;
+   
+   z-index: 1;
+   
+   transform-origin: 4px 0px;
+   
+   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+               background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+               opacity 0.55s ease;
+ }
+ 
+ #menuToggle span:first-child
+ {
+   transform-origin: 0% 0%;
+ }
+ 
+ #menuToggle span:nth-last-child(2)
+ {
+   transform-origin: 0% 100%;
+ }
+ 
+ /* 
+  * Transform all the slices of hamburger
+  * into a crossmark.
+  */
+ #menuToggle input:checked ~ span
+ {
+   opacity: 1;
+   transform: rotate(45deg) translate(-2px, -1px);
+   background: #293137;
+ }
+ 
+ /*
+  * But let's hide the middle one.
+  */
+ #menuToggle input:checked ~ span:nth-last-child(3)
+ {
+   opacity: 0;
+   transform: rotate(0deg) scale(0.2, 0.2);
+ }
+ 
+ /*
+  * Ohyeah and the last one should go the other direction
+  */
+ #menuToggle input:checked ~ span:nth-last-child(2)
+ {
+   transform: rotate(-45deg) translate(0, -1px);
+ }
+ 
+ /*
+  * Make this absolute positioned
+  * at the top left of the screen
+  */
+ #menu
+ {
+   position: absolute;
+   width: 300px;
+   margin: -100px 0 0 -50px;
+   padding: 50px;
+   padding-top: 125px;
+   /* z-index: 1; */
+   background: #858E61;
+   list-style-type: none;
+   -webkit-font-smoothing: antialiased;
+   /* to stop flickering of text in safari */
+   
+   transform-origin: 0% 0%;
+   transform: translate(-100%, 0);
+   
+   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+ }
+ 
+ #menu li
+ {
+   font-size: 20px;
+   font-family: 'Quicksand', sans-serif;
+
+ }
+ 
+ /*
+  * And let's slide it in from the left
+  */
+ #menuToggle input:checked ~ ul
+ {
+   transform: none;
+ }

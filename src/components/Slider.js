@@ -8,6 +8,8 @@ import browser from "../media/browser.png"
 import capitol from "../media/capitol.png"
 import swap from "../media/swap.png"
 import webdesign from "../media/webdesign.png"
+import download from "../media/download.png"
+import portfolio from "../media/portfolio.png"
 
 class Slider extends Component {
   constructor(props){
@@ -39,24 +41,25 @@ class Slider extends Component {
   icon: swap,
   tags: ["Python", "Flask"]
 },    {
-  name: "Portfolio",
-  github: "https://github.com/ace-vmware/portfolio",
-  icon: webdesign,
-  tags: ["React.js", "SaaS"]
-},    {
-  name: "Portfolio (old)",
-  github: "https://github.com/ace-vmware/adamevancho-website",
-  icon: webdesign,
-  tags: ["Python", "Django", "Bootstrap"]
-},    {
   name: "Responsive Page",
   github: "https://github.com/ace-vmware/Responsive-Pages",
   icon: browser,
   tags: ["HTML5", "CSS3"]
 },    {
+  name: "Portfolio (old)",
+  github: "https://github.com/ace-vmware/adamevancho-website",
+  icon: webdesign,
+  tags: ["Python", "Django", "Bootstrap"]
+},    
+      {
+  name: "Portfolio",
+  github: "https://github.com/ace-vmware/portfolio",
+  icon: portfolio,
+  tags: ["React.js", "SaaS"]
+},    {
   name: "Salesforce Ticket Content Downloader",
   github: "https://github.com/ace-vmware/SFDC-Content-Downloader",
-  icon: browser,
+  icon: download,
   tags: ["Python"]
 }
   ]
@@ -105,8 +108,8 @@ class Slider extends Component {
   
   render() {
     return(
-      <div id="carousel" className="noselect d-flex flex-column">
-            <h3 className="work-section-header text-center mt-3 text-dark">Work</h3>
+      <div id="carousel" className="noselect d-flex flex-column align-items-center">
+            <h3 className="work-section-header text-center mt-3">Work</h3>
           <div className="d-flex flex-row">
             <div className="arrow arrow-left" onClick={this.leftClick}><i className="fas fa-arrow-left"></i></div>
             <ReactCSSTransitionGroup
@@ -132,11 +135,11 @@ class Item extends React.Component {
   render() {
       // const className = 'item overflow-auto level' + this.props.level
       const showScroll = this.props.level !== 0 ? "overflow-hidden" : "overflow-auto"
-      const className = 'd-flex flex-column justify-content-evenly text-center ' + 'level' + this.props.level + " item " + showScroll
+      const className = 'd-flex flex-column align-items-center justify-content-evenly text-center ' + 'level' + this.props.level + " item " + showScroll
       
       const tags = []
       for (var tag of this.props.tags) {
-        tags.push(<div>{tag}</div>)
+        tags.push(<div className="techtag m-1">{tag}</div>)
       }
       
       return(
@@ -151,7 +154,7 @@ class Item extends React.Component {
               {/* <img src={this.props.icon}></img> */}
               <h3>{this.props.name}</h3>
               <img src={this.props.icon} alt="salesforce clone"></img>
-              <div className="d-flex">
+              <div className="d-flex flex-column justify-content-center align-items-center">
                 {tags}
               </div>
               <a href={this.props.github}><i class="fab fa-github"></i></a>

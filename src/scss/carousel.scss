@@ -51,7 +51,8 @@ $level0-bs: 0 .4em .8em #212121;
     position: absolute;
     width: 30px;
     height: 80px;
-    background-color: #673AB7;
+    border-radius: 3px;
+    background-color: #858E61;
     text-align: center;
     font-size: 2em;
     cursor: pointer;
@@ -74,15 +75,16 @@ $level0-bs: 0 .4em .8em #212121;
         left: 0;
     }
   &:hover{
-    background-color: #512DA8;
-    color: #FFEB3B;
+    background-color: #293137;
+    color: #E9E59E;
   }
 }
 
 .item {
     // text-align: center;
-    color: white;
+    color: #293137;
     font-size: 20px;
+    font-weight: 500;
     position: absolute;
     width: 10px;
     height: 100px;
@@ -94,7 +96,7 @@ $level0-bs: 0 .4em .8em #212121;
 }
 
 .item img {
-    width: 100%;
+    width: 80%;
     height: auto;
     padding: 20px
 }
@@ -105,9 +107,17 @@ $level0-bs: 0 .4em .8em #212121;
 }
 
 .item i {
-    color: black;
+    color: #293137;
     font-size: 2em;
     text-align: center;
+}
+
+.techtag {
+    color: #E9E59E;
+    background-color: #293137;
+    border: 2px solid #293137;
+    border-radius: 5px;
+    width: 6em;
 }
 
 .level-2 {
@@ -115,7 +125,7 @@ $level0-bs: 0 .4em .8em #212121;
     height: $level2-height;
     width: $level2-width;
     // line-height: $level2-height;
-    background-color: #100D11;
+    background-color: #E9E59E;
     left: $level-2-left;
     font-size: 16px;
 }
@@ -125,7 +135,7 @@ $level0-bs: 0 .4em .8em #212121;
     height: $level1-height;
     width: $level1-width;
     // line-height: $level1-height;
-    background-color: #18202B;
+    background-color: #E9E59E;
     left: $level-1-left;
     font-size: 16px;
 }
@@ -135,7 +145,7 @@ $level0-bs: 0 .4em .8em #212121;
     height: $level0-height;
     width: $level0-width;
     // line-height: $level0-height;
-    background-color: #67707e;
+    background-color: #E9E59E;
     left: $level0-left;
     font-size: 16px;
 }
@@ -145,7 +155,7 @@ $level0-bs: 0 .4em .8em #212121;
     height: $level1-height;
     width: $level1-width;
     // line-height: $level1-height;
-    background-color: #18202B;
+    background-color: #E9E59E;
     left: $level1-left;
     font-size: 16px;
 }
@@ -155,7 +165,7 @@ $level0-bs: 0 .4em .8em #212121;
     height: $level2-height;
     width: $level2-width;
     // line-height: $level2-height;
-    background-color: #100D11;
+    background-color: #E9E59E;
     left: $level2-left;
     font-size: 16px;
 }

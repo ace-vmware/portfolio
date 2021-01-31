@@ -1,18 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Italianno&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Nunito|Quicksand');
 
 #aboutme-section {
-    /* background-color: #0c0e1b; */
-    background: radial-gradient(ellipse at top, #1b2735 0%, #0f090c 100%);
+    background-color: #293137;
+    /* background: radial-gradient(ellipse at top, #1b2735 0%, #0f090c 100%); */
     height: 812px;
-    color: red;
+    color: #E9E59E;
 }
 
-@media (max-width: 480px) {
-    #aboutme-section {
-        background-color: red;
-    }
-}
 
 #slider-container {
     width: 85%;
@@ -23,6 +19,7 @@
     height: 50px;
     cursor: pointer;
     width: 100%;
+    color: #CDB55B;
 }
 
 #bottom-box {
@@ -79,14 +76,16 @@
     height: 45px;
 
 }
-
+@import url('https://fonts.googleapis.com/css?family=Nunito|Quicksand');
 #aboutme-txt1 {
-    font-family: 'Ubuntu', sans-serif;
-    font-weight: 700;
+    /* font-family: 'Ubuntu', sans-serif; */
+    font-family: 'Quicksand', sans-serif;
+    /* font-weight: 700; */
     font-size: 30px;
 }
 
 #about-me-content {
-    font-family: 'Ubuntu', sans-serif;
-    font-weight: 400;
+    /* font-family: 'Ubuntu', sans-serif; */
+    font-family: 'Nunito', sans-serif;
+    /* font-weight: 400; */
 }
