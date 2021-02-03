@@ -11,3 +11,11 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.profile-colors {
+  --profile-blue: #293137;
+  --profile-green: #858E61;
+  --profile-red: #784648;
+  --profile-yellow: #CDB55B;
+  --profile-lite-yellow: #E9E59E;
+  }

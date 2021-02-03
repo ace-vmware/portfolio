@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Slider from "./Slider"
+import "./Slider"
 
 class Work extends Component {
   constructor(props){
@@ -7,7 +8,7 @@ class Work extends Component {
   }
   
   render() {
-    var items = [1, 2, 3, 4, 5, 6]
+    var items = [1,2,3,4,5,6,7,]
     return (
       <div id="work-section" className="">
         <Slider items={items} active={0}/>

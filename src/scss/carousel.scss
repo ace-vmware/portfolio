@@ -1,7 +1,9 @@
 @import url( 'https://fonts.googleapis.com/css?family=Nunito');
 
+
+
 $default-height: 65%;
-$default-width: 35%;
+$default-width: 20%;
 $level2-height: $default-height - 8%;
 $level2-width: $default-width - 8%;
 $level1-height: $default-height - 2%;
@@ -18,13 +20,6 @@ $level-1-bs: -.2em .2em .4em #212121;
 $level2-bs: .1em .1em .2em #212121;
 $level1-bs: .2em .2em .4em #212121;
 $level0-bs: 0 .4em .8em #212121;
-
-
-// body {
-//     padding-top: 1em;
-//     background-color: #673AB7;
-//     font-family: 'Nunito';
-// }
 
 .basedOn {
   text-align: center;
@@ -86,6 +81,7 @@ $level0-bs: 0 .4em .8em #212121;
     font-size: 20px;
     font-weight: 500;
     position: absolute;
+    border-radius: 5px;
     width: 10px;
     height: 100px;
     padding-top: 10px;
@@ -98,7 +94,7 @@ $level0-bs: 0 .4em .8em #212121;
 .item img {
     width: 80%;
     height: auto;
-    padding: 20px
+    padding: 20px;
 }
 
 .item h3 {
@@ -215,7 +211,7 @@ $level0-bs: 0 .4em .8em #212121;
         opacity: 0;
         height: $level2-height - $default-height;
         width: $level2-width - $default-width;
-        line-height: 120px;
+        line-height: 20px;
         transition: box-shadow 1s,  left 1s, opacity 1s, height 250ms, width 250ms, margin-top 1s, line-height 1s;
     }
 }
@@ -260,4 +256,76 @@ $level0-bs: 0 .4em .8em #212121;
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+}
+
+@media (max-width: 480px) {
+
+    $default-height: 65%;
+    $default-width: 30%;
+    $level2-height: $default-height - 8%;
+    $level2-width: $default-width - 8%;
+    $level1-height: $default-height - 2%;
+    $level1-width: $default-width - 2%;
+    $level0-height: $default-height + 5%;
+    $level0-width: $default-width + 5%;
+    $level-2-left: 15%;
+    $level-1-left: 30%;
+    $level0-left: 50%;
+    $level1-left: 70%;
+    $level2-left: 85%;
+    $level-2-bs: -.1em .1em .2em #212121;
+    $level-1-bs: -.2em .2em .4em #212121;
+    $level2-bs: .1em .1em .2em #212121;
+    $level1-bs: .2em .2em .4em #212121;
+    $level0-bs: 0 .4em .8em #212121;
+
+    .level-2 {
+        box-shadow: $level-2-bs;
+        height: $level2-height;
+        width: $level2-width;
+        // line-height: $level2-height;
+        background-color: #E9E59E;
+        left: $level-2-left;
+        font-size: 16px;
+    }
+    
+    .level-1 {
+        box-shadow: $level-1-bs;
+        height: $level1-height;
+        width: $level1-width;
+        // line-height: $level1-height;
+        background-color: #E9E59E;
+        left: $level-1-left;
+        font-size: 16px;
+    }
+    
+    .level0 {
+        box-shadow: $level0-bs;
+        height: $level0-height;
+        width: $level0-width;
+        // line-height: $level0-height;
+        background-color: #E9E59E;
+        left: $level0-left;
+        font-size: 16px;
+    }
+    
+    .level1 {
+        box-shadow: $level1-bs;
+        height: $level1-height;
+        width: $level1-width;
+        // line-height: $level1-height;
+        background-color: #E9E59E;
+        left: $level1-left;
+        font-size: 16px;
+    }
+    
+    .level2 {
+        box-shadow: $level2-bs;
+        height: $level2-height;
+        width: $level2-width;
+        // line-height: $level2-height;
+        background-color: #E9E59E;
+        left: $level2-left;
+        font-size: 16px;
+    }
 }

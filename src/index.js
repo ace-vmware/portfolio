@@ -17,6 +17,8 @@ import "../src/css/hero.css"
 import "../src/css/aboutme.css"
 import "../src/css/work.css"
 
+
+
 ReactDOM.render(
 <App />, 
 document.getElementById('root'));

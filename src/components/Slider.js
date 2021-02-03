@@ -76,15 +76,17 @@ class Slider extends Component {
             index = i % this.state.items.length
         }
         level = this.state.active - i
-        items.push(<Item 
-        key={index} 
-        id={this.state.items[index]} 
-        level={level} 
-        name={this.itemContent[index].name}
-        github={this.itemContent[index].github}
-        icon={this.itemContent[index].icon}
-        tags={this.itemContent[index].tags} 
-        />)
+        items.push(
+          <Item 
+            key={index} 
+            id={this.state.items[index]} 
+            level={level} 
+            name={this.itemContent[index].name}
+            github={this.itemContent[index].github}
+            icon={this.itemContent[index].icon}
+            tags={this.itemContent[index].tags} 
+          />
+        )
     }
     return items
 }
