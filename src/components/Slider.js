@@ -137,7 +137,7 @@ class Item extends React.Component {
   render() {
       // const className = 'item overflow-auto level' + this.props.level
       const showScroll = this.props.level !== 0 ? "overflow-hidden" : "overflow-auto"
-      const className = 'd-flex flex-column align-items-center justify-content-evenly text-center ' + 'level' + this.props.level + " item " + showScroll
+      const className = 'd-flex flex-column align-items-center justify-content-evenly text-center item ' + showScroll + ' level' + this.props.level
       
       const tags = []
       for (var tag of this.props.tags) {
@@ -164,8 +164,5 @@ class Item extends React.Component {
       )
   }
 }
-
-var items = [1, 2, 3]
-ReactDOM.render(<Slider items={items} active={0}/>, document.getElementById('root'))
 
 export default Slider;

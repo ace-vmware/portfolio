@@ -11,11 +11,13 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import "../src/scss/hero.scss";
 import "../src/scss/aboutme.scss";
 import "../src/scss/carousel.scss";
+import "../src/scss/contact.scss"
 
 // CSS Imports
 import "../src/css/hero.css"
 import "../src/css/aboutme.css"
 import "../src/css/work.css"
+
 
 
 

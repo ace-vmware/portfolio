@@ -8,7 +8,7 @@ class Work extends Component {
   }
   
   render() {
-    var items = [1,2,3,4,5,6,7,]
+    var items = [1,2,3,4,5,6,7]
     return (
       <div id="work-section" className="">
         <Slider items={items} active={0}/>
