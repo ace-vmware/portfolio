@@ -17,6 +17,7 @@ import "../src/scss/contact.scss"
 import "../src/css/hero.css"
 import "../src/css/aboutme.css"
 import "../src/css/work.css"
+import "../src/css/footer.css"
 
 
 

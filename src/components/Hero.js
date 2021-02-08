@@ -25,7 +25,7 @@ class Hero extends Component {
                 <a href="#aboutme-section"><li>About</li></a>
                 <a href="#work-section"><li>Work</li></a>
                 <a href="#contact-section"><li>Contact</li></a>
-                <a href="https://github.com/ace-vmware" target="_blank"><li>Github</li></a>
+                <a href="#footer-section"><li>Links</li></a>
               </ul>
             </div>
           </nav>

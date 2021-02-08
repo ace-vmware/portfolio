@@ -23,12 +23,15 @@ form {
 	
   .form-control {
     background-color: #555555;
+    font-family: "Nunito";
+    color: #999999;
     padding: .5rem 3.5rem;
 		border-radius: 2rem;
     border: none;
     box-shadow: 0px 7px 5px rgba(0, 0, 0, 0.11);
 		
     &.thick {
+
       height: 3.3rem;
       padding: .5rem 3.5rem;
     }
@@ -41,8 +44,12 @@ form {
   }
 	
 	.message .form-control {
-			padding: .5rem 3.5rem;
-	}
+      padding: .5rem 3.5rem;
+  }
+  
+  .form-control:focus {
+    background-color: #cecece;
+  }
 	
   ::placeholder {
     font-family: 'Nunito', sans-serif;
@@ -101,13 +108,13 @@ form {
   border: 0;
   border-radius: 3rem;
   background-image:linear-gradient(131deg, #333333, #555555, #777777, #999999);
-
+  // box-shadow: 0px 7px 5px rgba(0, 0, 0, 0.11);
   background-size: 300% 100%;
   transition: all 0.3s ease-in-out;
 }
 
 .btn.btn-primary:hover:enabled {
-  box-shadow: 0 0.5em 0.5em -0.4em #000000;
+  box-shadow: 0px 7px 5px rgba(0, 0, 0, 0.11);
   background-size: 100% 100%;
   transform: translateY(-0.15em);
 }
