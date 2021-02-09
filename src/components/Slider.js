@@ -155,11 +155,12 @@ class Item extends React.Component {
               >
               {/* <img src={this.props.icon}></img> */}
               <h3>{this.props.name}</h3>
-              <img src={this.props.icon} alt="salesforce clone"></img>
+              <a href={this.props.github} target="_blank" rel="noreferrer">
+                <img src={this.props.icon} alt="salesforce clone"></img>
+              </a>
               <div className="d-flex flex-column justify-content-center align-items-center">
                 {tags}
               </div>
-              <a href={this.props.github}><i class="fab fa-github"></i></a>
           </div>
       )
   }
