@@ -16,11 +16,15 @@
 }
 
 #top-box {
-    height: 50px;
+    /* height: 50px; */
     cursor: pointer;
     width: 100%;
     color: #CDB55B;
     font-weight: bold;
+}
+
+#middle-box {
+    color: #CDB55B;
 }
 
 #bottom-box {
@@ -29,6 +33,7 @@
 }
 
 .open-sign {
+    font-size: 30px;
     font-family: 'Italianno', cursive;
     font-weight: 600;
     border: 2px solid #F8649F;
@@ -37,12 +42,14 @@
     text-shadow: 0 0 10px #2DDDFD;
     text-align: center;
     box-shadow: 1px 0px 20px 1px #861674;
-    padding: 5px;
+    /* margin: 0 10px;
+    padding: 5px; */
     width: 90px;
     height: 45px;
 }
 
 .closed-sign {
+    font-size: 30px;
     font-family: 'Italianno', cursive;
     font-weight: 600;
     border: 2px solid #F7F235;
@@ -51,19 +58,22 @@
     text-shadow: 0 0 20px #f53a49;
     text-align: center;
     box-shadow: 1px 0px 20px 1px #ac6a07;
-    padding: 5px;
+    /* padding: 5px; */
+    /* margin: 0 10px; */
     width: 90px;
     height: 45px;
 }
 
 .off-sign {
     font-family: 'Italianno', cursive;
+    font-size: 30px;
     font-weight: 600;
     border: 2px solid #4e4e4e;
     border-radius: 10px;
     color: #4e4e4e;
     text-align: center;
-    padding: 5px;
+    /* padding: 5px;
+    margin: 0 10px; */
     width: 90px;
     height: 45px;
 

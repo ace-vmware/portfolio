@@ -47,13 +47,16 @@ render(){
             className="d-flex flex-column justify-content-center align-items-center" 
             onClick={this.handleClick}>
             <div id="slider-container" className="d-flex flex-column">
-                <div id="top-box" className="d-flex flex-column justify-content-center my-5">
-                    <div className="d-flex justify-content-center align-items-baseline">
-                        <h3 id="less-btn" className="closed-sign text-center" signState={this.state.off}>LESS</h3>
-                        <h3 id="more-btn" className="off-sign text-center mx-3 pr-2">MORE</h3>
+                <div id="top-box" className="d-flex justify-content-center">
+                    <div id="less-btn" className="closed-sign mx-1" signState={this.state.off}>
+                        Less
                     </div>
-                    <h3 id="aboutme-txt1" className="text-center m-3">About&nbsp;Me</h3>
-
+                    <div id="more-btn" className="off-sign mx-1">
+                        More
+                    </div>
+                </div>
+                <div id="middle-box" className="my-3">
+                    <h3 id="aboutme-txt1" className="text-center">About&nbsp;Me</h3>
                 </div>
                 <div id="bottom-box" className="text-center overflow-auto">
                     <div>

@@ -9,7 +9,6 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 // Sass Imports
 import "../src/scss/hero.scss";
-import "../src/scss/aboutme.scss";
 import "../src/scss/carousel.scss";
 import "../src/scss/contact.scss"
 
