@@ -28,15 +28,6 @@
 
 }
 
-@media (max-width: 480px) {
-    #middle-box {
-        display: none;
-    }
-    #right-box {
-        margin-left: 5px;
-    }
-}
-
 .open-sign {
     font-family: 'Italianno', cursive;
     font-weight: 600;
