@@ -9,7 +9,7 @@ function App() {
   return (
       <div>
           <Hero />
-          <AboutMe />
+          <AboutMe id="section1"/>
           <Work />
           <Contact />
           <Footer />

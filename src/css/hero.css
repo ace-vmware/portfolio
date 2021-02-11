@@ -6,15 +6,13 @@
 @import url('https://fonts.googleapis.com/css?family=Nunito|Quicksand');
 
 
-html {
+/* html {
   scroll-behavior: smooth;
-}
+} */
 
 #hero {
   height: 812px;
-  /* background: radial-gradient(ellipse at bottom, #232C3F 0%, #090a0f 100%); */
   background: #858E61;
-
   overflow: hidden;
 }
 
@@ -23,7 +21,6 @@ html {
 }
 
 .herotext {
-  /* font-family: 'Ubuntu', sans-serif; */
   font-family: 'Quicksand', sans-serif;
   font-size: 95px;
   font-weight: 400;
@@ -32,7 +29,6 @@ html {
 }
 
 .herotext2 {
-  /* font-family: 'Ubuntu', sans-serif; */
   font-family: 'Quicksand', sans-serif;
   font-weight: 600;
   font-size: 18px;
@@ -45,12 +41,10 @@ html {
   color: #784648;
 }
 
-
 .herotext4 {
   font-family: 'Chicle', cursive;
   font-size: 50px;
   color: #784648;
-
 }
 
 @media (max-width: 480px) {
