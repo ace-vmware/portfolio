@@ -5,6 +5,42 @@ class Hero extends Component {
     super(props);
     this.state = {}
   }
+
+  supportsSmoothScrolling() {
+    const body = document.body;
+    const scrollSave = body.style.scrollBehavior;
+    body.style.scrollBehavior = 'smooth';
+    const hasSmooth = getComputedStyle(body).scrollBehavior === 'smooth';
+    body.style.scrollBehavior = scrollSave;
+    return hasSmooth;
+  }
+  
+  scrollToSection(event) {
+    if (this.supportsSmoothScrolling()) {
+      return;
+    }
+    event.preventDefault();
+    const scrollToElem = document.getElementById("section");
+    this.SmoothVerticalScrolling(scrollToElem, 300, "top");
+  }
+
+  SVS_B(eAmt, position) {
+    if (position === "center" || position === "")
+    window.scrollBy(0, eAmt / 2);
+    if (position === "top")
+    window.scrollBy(0, eAmt);
+  }
+
+  SmoothVerticalScrolling(element, time, position) {
+    var eTop = element.getBoundingClientRect().top;
+    var eAmt = eTop / 100;
+    var curTime = 0;
+    while (curTime <= time) {
+      window.setTimeout(this.SVS_B, curTime, eAmt, position);
+      curTime += time / 100;
+    }
+  }
+  
   
   render() {
     return (
@@ -21,11 +57,11 @@ class Hero extends Component {
               
 
               <ul id="menu">
-                <a href="#hero"><li>Home</li></a>
-                <a href="#aboutme-section"><li>About</li></a>
-                <a href="#work-section"><li>Work</li></a>
-                <a href="#contact-section"><li>Contact</li></a>
-                <a href="#footer-section"><li>Links</li></a>
+                <a href="#hero" onClick={this.scrollToSection.bind(this)}><li>Home</li></a>
+                <a href="#aboutme-section" onClick={this.scrollToSection.bind(this)}><li>About</li></a>
+                <a href="#work-section" onClick={this.scrollToSection.bind(this)}><li>Work</li></a>
+                <a href="#contact-section" onClick={this.scrollToSection.bind(this)}><li>Contact</li></a>
+                <a href="#footer-section" onClick={this.scrollToSection.bind(this)}><li>Links</li></a>
               </ul>
             </div>
           </nav>
