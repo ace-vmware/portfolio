@@ -55,7 +55,7 @@ class Slider extends Component {
   name: "Portfolio",
   github: "https://github.com/ace-vmware/portfolio",
   icon: portfolio,
-  tags: ["React.js", "SaaS"]
+  tags: ["React.js", "Sass"]
 },    {
   name: "Salesforce Ticket Content Downloader",
   github: "https://github.com/ace-vmware/SFDC-Content-Downloader",

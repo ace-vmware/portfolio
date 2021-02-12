@@ -22,7 +22,7 @@ class Hero extends Component {
 
               <ul id="menu">
                 <a href="#hero"><li>Home</li></a>
-                <a href="#aboutme-section"><li>About</li></a><li>About</li>
+                <a href="#aboutme-section"><li>About</li></a>
                 <a data-scroll href="#work-section"><li>Work</li></a>
                 <a href="#contact-section"><li>Contact</li></a>
                 <a href="#footer-section"><li>Links</li></a>

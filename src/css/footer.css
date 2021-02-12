@@ -2,25 +2,25 @@
 
 #footer-section {
     height: 100px;
-    background-color: #35334A;
-    color: #B89760;
+    background-color: #333333;
+    color: #CDB55B;
     font-family: Nunito;
     text-decoration: none;
 }
 
 #footer-section button {
-    background-color: #35334A;
+    background-color: #333333;
     border: none;
 }
 
 #footer-section i {
-    color: #7A8586;
+    color: #784648;
     font-size: 1.5rem;
 }
 
 #footer-section a {
-    color: #B89760;
+    color: #CDB55B;
     font-size: 1.2rem;
-    /* text-decoration: none; */
+    text-decoration: none;
 }
 
