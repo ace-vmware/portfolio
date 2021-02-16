@@ -135,7 +135,6 @@ class Item extends React.Component {
   }
   
   render() {
-      // const className = 'item overflow-auto level' + this.props.level
       const showScroll = this.props.level !== 0 ? "overflow-hidden" : "overflow-auto"
       const className = 'd-flex flex-column align-items-center justify-content-evenly text-center item ' + showScroll + ' level' + this.props.level
       
@@ -145,15 +144,7 @@ class Item extends React.Component {
       }
       
       return(
-          <div className={className}
-              style={{
-                  // backgroundImage: "url(http://lorempixel.com/400/200/)",
-                  // backgroundSize: "cover",
-                  // backgroundRepeat: "no-repeat",
-                  // backgroundPosition: "center center",
-              }}
-              >
-              {/* <img src={this.props.icon}></img> */}
+          <div className={className}>
               <h3>{this.props.name}</h3>
               <a href={this.props.github} target="_blank" rel="noreferrer">
                 <img src={this.props.icon} alt="salesforce clone"></img>

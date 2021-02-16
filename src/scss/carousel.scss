@@ -25,11 +25,6 @@ $level0-bs: 0 .4em .8em #212121;
     position: relative;
     height: 100%;
     width: 100%;
-    // margin: auto;
-    // left: 0;
-    // right: 0;
-    // top: 0;
-    // bottom: 0;
 }
 
 
@@ -67,7 +62,6 @@ $level0-bs: 0 .4em .8em #212121;
 }
 
 .item {
-    // text-align: center;
     color: #293137;
     font-size: 20px;
     font-weight: 500;
@@ -76,7 +70,6 @@ $level0-bs: 0 .4em .8em #212121;
     width: 10px;
     height: 100px;
     padding-top: 10px;
-    // left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
     transition: box-shadow 1s,  height 250ms, width 250ms, left 1s, margin-top 1s, line-height 250ms, background-color 1s;
