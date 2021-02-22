@@ -45,17 +45,18 @@ class Slider extends Component {
   github: "https://github.com/ace-vmware/Responsive-Pages",
   icon: browser,
   tags: ["HTML5", "CSS3"]
-},    {
-  name: "Portfolio (old)",
-  github: "https://github.com/ace-vmware/pokegame",
-  icon: pokeball,
-  tags: ["React.js"]
-},    
-      {
+},             
+  {
   name: "Portfolio",
   github: "https://github.com/ace-vmware/portfolio",
   icon: portfolio,
   tags: ["React.js", "Sass"]
+},
+  {
+  name: "Poke'game",
+  github: "https://github.com/ace-vmware/pokegame",
+  icon: pokeball,
+  tags: ["React.js"]
 },    {
   name: "Salesforce Ticket Content Downloader",
   github: "https://github.com/ace-vmware/SFDC-Content-Downloader",
