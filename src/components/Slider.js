@@ -7,7 +7,7 @@ import dashboard from "../media/dashboard.png"
 import browser from "../media/browser.png"
 import capitol from "../media/capitol.png"
 import swap from "../media/swap.png"
-import webdesign from "../media/webdesign.png"
+import pokeball from "../media/pokeball.png"
 import download from "../media/download.png"
 import portfolio from "../media/portfolio.png"
 
@@ -47,9 +47,9 @@ class Slider extends Component {
   tags: ["HTML5", "CSS3"]
 },    {
   name: "Portfolio (old)",
-  github: "https://github.com/ace-vmware/adamevancho-website",
-  icon: webdesign,
-  tags: ["Python", "Django", "Bootstrap"]
+  github: "https://github.com/ace-vmware/pokegame",
+  icon: pokeball,
+  tags: ["React.js"]
 },    
       {
   name: "Portfolio",
